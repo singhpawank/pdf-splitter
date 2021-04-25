@@ -3,7 +3,7 @@ import sys
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
 
-def pdf_splitter(pdf_path, start_page, end_page, target_path="/home/pawan/Documents"):
+def pdf_splitter(pdf_path, start_page, end_page, target_path="/home/user/Documents"):
     # we will save new splited pdf as "nameofpdf-splitted.pdf"
     # example if pdf name is "abc.pdf" then it will be saved as "abc-splitted(x-y).pdf"
 
