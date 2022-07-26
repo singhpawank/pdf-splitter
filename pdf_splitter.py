@@ -3,7 +3,7 @@ import sys
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
 
-def pdf_splitter(pdf_path, start_page, end_page, target_path="/home/user/Documents"):
+def pdf_splitter(pdf_path, start_page, end_page, target_path=os.getcwd()):
     # we will save new splited pdf as "nameofpdf-splitted.pdf"
     # example if pdf name is "abc.pdf" then it will be saved as "abc-splitted(x-y).pdf"
 
@@ -54,7 +54,7 @@ def main():
         print("*" * 50)
         print("Invalid Agruments")
         print("-" * 50)
-        print("python pdf_split_all.py pdf_file_name_with_full_path starting_page, end_page, target_path(default is Documents)")
+        print("python pdf_split_all.py pdf_file_name_with_full_path starting_page, end_page, target_path(default is current directory)")
         print("-" * 50)
         print("Example")
         print("python pdf_split_all.py path 1 4 target_path(defaulf set to Documents)")
